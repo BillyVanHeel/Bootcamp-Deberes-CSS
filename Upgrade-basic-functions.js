@@ -73,3 +73,58 @@ function averageWord(array){
     return sum;
 }
 console.log(averageWord(mixedElements));
+
+//Iteración 6
+
+
+const duplicates = [
+    'sushi',
+    'pizza',
+    'burger',
+    'potatoe',
+    'pasta',
+    'ice-cream',
+    'pizza',
+    'chicken',
+    'onion rings',
+    'pasta',
+    'soda'
+  ];
+
+  function removeDuplicates(array){
+    for (let i = 0; i < array.length; i++) {
+        for (let j = i +1; j < array.length; j++) {
+           if (array[i] === array[j]){
+            array.splice(j,1);
+            j--;
+           }
+        }
+        
+    }
+    return array
+  }
+ console.log(removeDuplicates(duplicates));
+
+//Iteración 7
+
+const nameFinder = [
+    'Peter',
+    'Steve',
+    'Tony',
+    'Natasha',
+    'Clint',
+    'Logan',
+    'Xabier',
+    'Bruce',
+    'Peggy',
+    'Jessica',
+    'Marc'
+  ];
+  function finderName(array, element){
+    for (let i = 0; i < array.length; i++) {
+        array.indexOf(i, 0);
+    
+    } 
+  return array.indexOf(element, 0);
+}
+console.log(finderName (nameFinder, 'Jessica'));
