@@ -29,3 +29,11 @@ alumns.forEach((pupil) => {
   });
 
     console.log(alumns);
+
+//Iteración 3
+
+const placesToTravel = ['Japon', 'Venecia', 'Murcia', 'Santander', 'Filipinas', 'Madagascar']
+
+for (const country of placesToTravel) {
+    console.log((placesToTravel.indexOf(country)+1) +') '+country);
+}
