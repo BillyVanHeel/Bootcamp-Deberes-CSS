@@ -1,4 +1,6 @@
 //Iteración 1
+console.log('\n'+'---Iteración 1---'+'\n');
+
 function sum(numberOne, numberTwo) {
   if (numberOne > numberTwo) {
     return numberOne;
@@ -9,6 +11,7 @@ function sum(numberOne, numberTwo) {
 console.log("Highest number is " + sum(23, 34));
 
 //Iteration 2
+console.log('\n'+'---Iteración 2---'+'\n');
 
 const avengers = [
   "Hulk",
@@ -35,6 +38,7 @@ console.log(
 );
 
 //Iteration 3
+console.log('\n'+'---Iteración 3---'+'\n');
 
 const numbers = [1, 2, 3, 5, 45, 37, 58];
 
@@ -46,9 +50,10 @@ function sumAll(array) {
   return sum;
 }
 
-console.log("all the number together equal " + sumAll(numbers));
+console.log("all the numbers together equal " + sumAll(numbers));
 
 //Iteración 4
+console.log('\n'+'---Iteración 4---'+'\n');
 
 const factors = [12, 21, 38, 5, 45, 37, 6];
 
@@ -64,6 +69,7 @@ function average(array) {
 console.log("The average of the numbers is " + average(factors));
 
 //Iteración 5
+console.log('\n'+'---Iteración 5---'+'\n');
 
 const mixedElements = [6, 1, "Rayo", 1, "vallecano", "10", "upgrade", 8, "hub"];
 function averageWord(array) {
@@ -80,6 +86,7 @@ function averageWord(array) {
 console.log(averageWord(mixedElements));
 
 //Iteración 6
+console.log('\n'+'---Iteración 6---'+'\n');
 
 const duplicates = [
   "sushi",
@@ -109,6 +116,7 @@ function removeDuplicates(array) {
 console.log(removeDuplicates(duplicates));
 
 //Iteración 7
+console.log('\n'+'---Iteración 7---'+'\n');
 
 const nameFinder = [
   "Peter",
@@ -123,26 +131,21 @@ const nameFinder = [
   "Jessica",
   "Marc",
 ];
-/* function finderName(array, element){
-    for (let i = 0; i < array.length; i++) {
-       const element === array[i];
-    }
-    return element + ': ' + array.indexOf(element);
-} */
 
-function finderName(array, element){
-        for(let i = 0; i < array.length; i++){
-       if (element === array[i]){
-        console.log (element[i] + ': ' + (array.indexOf(element)+1));
-       }
-       else{
-        console.log('false');
-       } 
-    }
+function finderName(array, name){
+  let result = 'false';
+for (let element of array){
+  if(name === element){
+  result = element + ': ' + ((array.indexOf(element))+1);
+}} 
+return result;
 }
-console.log(finderName(nameFinder, 'Jessica'));
+
+ console.log(finderName(nameFinder, 'Peggy'));
+ console.log(finderName(nameFinder, 'Eustaquio'));
  
 //iteración 8
+console.log('\n'+'---Iteración 8---'+'\n');
 
 const counterWords = [
   "code",
