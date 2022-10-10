@@ -54,17 +54,17 @@ const users = [
     },
 ]
 
-const volumeInfo = { totalVolume: 0, totalCount: 0 };
+let volumeSum=0;
+let volumeCount=0;
 
 for (const user of users) {
-  for (const key in user.favoritesSounds) {
-    const favoriteSound = user.favoritesSounds[key];
-    volumeInfo.totalVolume += favoriteSound.volume;
-    volumeInfo.totalCount++;
+  for (const vibe in user.favoritesSounds) {
+    volumeSum += user.favoritesSounds[vibe].volume;
+    volumeCount++;
     
   }
 }
-    console.log(volumeInfo.totalVolume/volumeInfo.totalCount);
+    console.log(volumeSum/volumeCount);
 
 //Iteración 3
     console.log('\n'+'---Iteración 3---' +'\n');
