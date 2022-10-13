@@ -133,7 +133,7 @@ const nameFinder = [
 ];
 
 function finderName(array, name){
-  let result = 'false';
+  let result = false;
 for (let element of array){
   if(name === element){
   result = element + ': ' + ((array.indexOf(element))+1);
