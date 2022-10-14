@@ -37,7 +37,21 @@ const displayPetition = (response) => {
 
   document.body.appendChild(petitionOutput);
   console.log(response);
-}
 
 //Iteración 4
+
+const banishingButton = document.createElement('button');
+banishingButton.textContent = 'X';
+petitionOutput.appendChild(banishingButton);
+
+
+const banish = (element) =>{
+    element.remove();
+}
+banishingButton.addEventListener('click', () => banish(petitionOutput));
+
+
+}
+
+
 
